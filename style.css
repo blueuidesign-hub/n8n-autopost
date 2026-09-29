@@ -78,3 +78,10 @@ footer a{color:var(--muted)}
   .hero .wrap{grid-template-columns:1fr;padding-top:3rem;padding-bottom:3rem;gap:2.25rem}
   .steps,.two{grid-template-columns:1fr}
 }
+
+/* Logo YouTube: file chinh thuc tai tu trang tai nguyen thuong hieu cua YouTube.
+   Khong doi mau, khong keo gian, chua khoang trong quanh logo. */
+.uploads-to{display:flex;align-items:center;gap:.6rem;color:var(--muted);font-size:1rem}
+.yt-logo{height:22px;width:auto;display:inline-block}
+.yt-logo-lg{height:28px}
+.with-logo{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap}
