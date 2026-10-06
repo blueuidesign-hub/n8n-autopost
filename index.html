@@ -4,60 +4,58 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="icon.png">
-<link rel="apple-touch-icon" href="icon.png">
-<title>n8n-autopost · Scheduled video publishing</title>
-<meta name="description" content="n8n-autopost publishes your videos to TikTok and other platforms at the time you choose.">
+<title>n8n-autopost · Scheduled YouTube uploads</title>
+<meta name="description" content="n8n-autopost uploads your videos to YouTube at the time you choose.">
 </head><body>
 <header class="top"><div class="wrap">
-<a class="brand" href="./"><img src="icon.png" alt="" class="brand-icon">n8n-autopost</a>
+<a class="brand" href="./">n8n-autopost</a>
 <nav class="nav" aria-label="Main">
-<a href="./#how">How it works</a><a href="./#tiktok">TikTok access</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="./#contact">Contact</a>
+<a href="./#how">How it works</a><a href="./#youtube">YouTube access</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="./#contact">Contact</a>
 </nav></div></header>
 <main>
 <section class="hero"><div class="wrap">
   <div>
-    <h1>Pick a time. Your video goes live then.</h1>
-    <p>n8n-autopost publishes videos and photos to TikTok, Facebook, Threads and YouTube at the time you schedule. You choose the file, write the caption and set the time. The post goes out on its own.</p>
+    <h1>Schedule the upload. It goes to your channel on time.</h1>
+    <p>n8n-autopost uploads your videos to your own YouTube channel at the time you schedule. You choose the file, write the title and description and set the time. The upload runs on its own.</p>
+    <p class="uploads-to">Uploads to <img src="youtube-logo.png" alt="YouTube" class="yt-logo"></p>
     <a class="btn" href="#how">See how it works</a>
   </div>
-  <div class="day" aria-label="Example posting schedule">
-    <div class="day-head"><strong>Thursday</strong><span>3 posts scheduled</span></div>
-    <div class="slot"><time>08:00</time><div><div class="what">Morning tips, video</div><div class="state">Published to TikTok</div></div></div>
-    <div class="slot"><time>12:30</time><div><div class="what">Product photos, 4 images</div><div class="state">Published to Facebook and Threads</div></div></div>
-    <div class="slot next"><time>19:00</time><div><div class="what">Behind the scenes, video</div><div class="state">Scheduled for TikTok and YouTube</div></div></div>
+  <div class="day" aria-label="Example upload schedule">
+    <div class="day-head"><strong>Thursday</strong><span>3 uploads scheduled</span></div>
+    <div class="slot"><time>08:00</time><div><div class="what">Morning tips</div><div class="state">Uploaded to YouTube</div></div></div>
+    <div class="slot"><time>12:30</time><div><div class="what">Product walkthrough</div><div class="state">Uploaded to YouTube</div></div></div>
+    <div class="slot next"><time>19:00</time><div><div class="what">Behind the scenes, Short</div><div class="state">Scheduled for YouTube</div></div></div>
   </div>
 </div></section>
 
 <section class="block" id="how"><div class="wrap">
   <h2>How it works</h2>
   <ol class="steps">
-    <li><h3>Connect your TikTok account</h3><p>You sign in with TikTok and approve access. We never see your TikTok password.</p></li>
-    <li><h3>Add a video and a time</h3><p>Upload the video, write the caption, choose the platforms and pick the publishing time.</p></li>
-    <li><h3>It publishes on schedule</h3><p>At the chosen time, the video is sent to TikTok through the official Content Posting API and appears on your profile.</p></li>
+    <li><h3>Connect your Google account</h3><p>You sign in with Google and allow uploads to your channel. We never see your Google password.</p></li>
+    <li><h3>Add a video and a time</h3><p>Upload the video, write the title and description, and pick the upload time.</p></li>
+    <li><h3>It uploads on schedule</h3><p>At the chosen time, the video is sent to your channel through the official YouTube Data API.</p></li>
   </ol>
 </div></section>
 
-<section class="block" id="tiktok"><div class="wrap">
-  <h2>What we access on TikTok</h2>
+<section class="block" id="youtube"><div class="wrap">
+  <h2 class="with-logo"><img src="youtube-logo.png" alt="YouTube" class="yt-logo yt-logo-lg"> What we access on YouTube</h2>
   <div class="two">
     <div>
       <h3>What we use</h3>
       <ul>
-        <li><strong>user.info.basic</strong>: your display name and avatar, so you can see which account is connected.</li>
-        <li><strong>video.publish</strong>: to publish the videos you scheduled, with the caption and privacy setting you chose.</li>
+        <li><strong>youtube.upload</strong>: to upload the videos you scheduled to your channel, with the title, description and visibility you chose.</li>
       </ul>
     </div>
     <div>
       <h3>What we never do</h3>
       <ul>
-        <li>Read your messages, followers or other videos.</li>
-        <li>Post anything you did not schedule yourself.</li>
+        <li>Read your channel data, comments, subscribers or analytics.</li>
+        <li>Upload anything you did not schedule yourself.</li>
         <li>Sell or share your data with advertisers.</li>
       </ul>
     </div>
   </div>
-  <p class="note">You can remove access at any time in the TikTok app: Settings and privacy, Security, Manage app permissions. Scheduled posts stop as soon as access is removed.</p>
+  <p class="note">n8n-autopost uses YouTube API Services. By uploading through n8n-autopost you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. You can revoke access at any time on the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>. Scheduled uploads stop as soon as access is revoked. Read our <a href="privacy.html">Privacy Policy</a> for how we handle your data.</p>
 </div></section>
 
 <section class="block" id="contact"><div class="wrap">
